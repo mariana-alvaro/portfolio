@@ -1,0 +1,254 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>AB Testing</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/axt2uiw.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="abtesting.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="home.html" style="color: #ff97b7; font-weight: bolder;">myname</a>
+    
+      <div class="mx-auto order-0">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html" style="color: #ff97b7; ">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="art.html" style="color: #ff97b7;">Art</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" style="color: #ff97b7;">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.pdf" style="color: #ff97b7;">Resume</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+
+    <div class="title">
+      A/B Testing
+    </div>
+
+    <!--Responsive Navbar-->
+    <div class="topnav" id="myTopnav">
+      <a href="#Context" class="active">Context</a>
+      <a href="#Hypotheses">Hypotheses</a>
+      <a href="#Data">Data Collection</a>
+      <a href="#Analysis">Data Analysis</a>
+      <a href="#Info">Infographic + Takeaways</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+      <div class="header-image">
+        <img src="abtesting_pics/ab.jpg">
+      </div>
+    <!--Context-->
+    <div class="heading" id="Context">
+      Context
+    </div>
+    <div class="subheading" >
+      Can a small change in the design of a website change the way consumers navigate through it? 
+    </div>
+    <div class="paragraph">
+      For the UI/UX class at Brown, students were asked to make 2 different versions of a online cacti store.
+      The goal is to perform an A/B test and statistical analysis to determine if these changes
+      impact the time to complete the task of ordering $150 worth of cacti or the return rate (the 
+      number of times the user returns to the homepage).
+    </div>
+    <div class="subheading" >
+      Version A
+    </div>
+    <div class="images">
+      <img src="abtesting_pics/versionA.png" alt="version A" style="width: 60%; height: auto;">
+    </div>
+    <div class="subheading" >
+      Version B
+    </div>
+    <div class="images">
+      <img src="abtesting_pics/versionB.png" alt="version B" style="width: 60%; height: auto;">
+    </div>
+
+    <!--Hypothesis-->
+    <div class="heading" id="Hypotheses">
+      Hypotheses
+    </div>
+    <div class="body-text-bold">
+      Time To Completion
+    </div>
+    <div class="paragraph">
+      <ul>
+      <li>Null: the time to complete the task in version A is the same as the time to complete it in version B. </li>
+      <br>
+      <li>Alternative: the time to complete the task in version A is lower than the time to complete it in version B because the larger font increases visibility of the prices and thus,
+        the user can add $150 worth of cacti faster.</li>
+      </ul> 
+    </div>
+    <div class="body-text-bold">
+      Return Rate
+    </div>
+    <div class="paragraph">
+      <ul>
+      <li>Null: the return rate in version A equals the return rate in version B. </li>
+      <br>
+      <li>Alternative: version A's return rate will not equal B's return rate  because version's A font size is larger and therefore has a better visibility
+        (which would make version A have a lower return rate).</li>
+      </ul> 
+    </div>
+
+    <!--Data-->
+    <div class="heading" id="Data">
+      Data Collection
+    </div>
+    <div class="paragraph">
+      To perform my A/B Test, I sent the link to my website to a random sample of other UI/UX students. This link opened version A half of the time and 
+      version B, the other half. 
+      <br>
+      <br>
+      Additionally, I coded some functions in python to compute a Chi-Squared test and a T-test on the different sets of data collected.
+      <br>
+      <br>
+      Then, I extracted and filtered the logs of the website and transferred the data into an excel file to calculate the time it took each user to 
+      complete the task, and how many times an user returned to the homepage (or not) in the two different versions.
+      These logs recorded the interactions of 25 students. 
+      <br>
+      <br>
+      Finally, I ran the Chi-Squared test and the T-test on the data collected. 
+    </div>
+
+    <!--Analysis-->
+    <div class="heading" id="Analysis">
+      Analysis
+    </div>
+    <div class="subheading" >
+      So... were the alternative hypotheses right?
+    </div>
+    <div class="body-text-bold">
+      Time To Completion
+    </div>
+    <div class="paragraph">
+      <br>
+      When a user clicks on a link, a log with a pageload time, session id, and click time is generated. 
+      Thus, to calculate the time to complete the task for the different users, I substracted the last clicktime
+      from the first page load time of each different user to get the difference in miliseconds. If the user was 
+      using version A, I would record these miliseconds in a column for version A and vice versa.
+      <br>
+      <br>
+      With this data, I performed a two sample t-test for the difference of means. I got a t-score of -1.2606 and a 
+      p-value of 0.1168. However, because my p-value is less than my significance level of 5%, I failed to reject the 
+      null hypothesis. Thus, my results are statistically insignificant (there is a doubt as to whether 
+      the alternative hypothesis will repeat itself in further trials). 
+      <br>
+      <br>
+      Unfortunately, we cannot conclude wether the time to complete the task version A is less than or equal to the time to
+      complete it in version B. This can be because our sample size is not big enough to display statistically significant results.
+    </div>
+    <div class="body-text-bold">
+      <br>
+      Return Rate
+    </div>
+    <div class="paragraph">
+      <br>
+      The logs also provide information about whether or not a user returned to the homepage after going to the checkout page. We 
+      prefer a low return rate because if the user does not need to return to the homepage after going to checkout, it means that it
+      was easy and clear for them to complete the task effectively on the first try. 
+      <br>
+      <br>
+      I created the following table to manually count how many users returned to the homepage and how many did not:
+    </div>
+    <table>
+      <tbody align="center">
+        <tr>
+          <td width=25% ></td>
+          <td width=25%>Return</td>
+          <td width=25%>No Return</td>
+        </tr>
+        <tr>
+          <td width=25%>Version A</td>
+          <td width=25%>10</td>
+          <td width=25%>2</td>
+        </tr>
+        <tr>
+          <td width=25%>Version B</td>
+          <td width=25%>8</td>
+          <td width=25%>5</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="paragraph">
+      <br>
+      On first sight, it looks like version A has a lower return rate than version B (or that they have different return rates and thus, 
+      our alternative hypothesis is true). Nonetheless, I ran a Chi-Squared test and obtained
+      a Chi-Squared value of 1.470 and a p-value of 0.225. Again, because my p-value is less than my significance level of 5%, I failed to reject the 
+      null hypothesis. Thus, my results are statistically insignificant, and I cannot conclude that version A has a different return rate than version B.
+    </div>
+
+    <!--Infographic-->
+    <div class="heading" id="Info">
+      Infographic + Takeaways
+    </div>
+    <div class="images">
+      <img src="abtesting_pics/infographic2.png" alt="infographic" style="width: 60%; height: auto;">
+    </div>
+    <div class="subheading">
+      Takeaways
+    </div>
+    <div class="paragraph">
+      <ul>
+      <li>I believe the biggest limitation for the results of my study was that my sample size was not large enough to 
+        produce statistically significant results. Additionally, even though the selection of students from my UI/UX 
+        class was random, all the users had similar demographics.
+      </li>
+      <br>
+      <li>Because my results are statistically insignificant for both the T-test and the Chi-Squared test, I cannot 
+        draw any conclusions about design principles. However, I do believe that increasing visibility and legibility
+        of a website can decrease the time to completion and return rate. We'll see next time...
+      </li>
+      </ul> 
+    </div>
+    <div class="body-text-bold">
+      Sources:
+    </div>
+    <div class="source">
+      <ul>
+        <li>https://www.calculators.org/math/z-critical-value.php</li>
+        <br>
+        <li>https://create.piktochart.com/</li>
+        </ul> 
+    </div>
+    <div class="links">
+      <a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin-square" style="color: #ff97b7; font-size: 28px; margin: 3px;"></a>
+      <a href="mailto:myname@brown.edu" target="_blank" class="fa fa-envelope" style="font-size:27px;color:#ff97b7; margin: 3px;"></i></a>  
+        <a href="https://www.github.com" target="_blank" class="fa fa-github" style="color: #ff97b7; font-size: 28px; margin: 3px;"></i></a>
+    </div>
+    <footer> Made by myname ©</footer>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>Not Your Common Pup App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/axt2uiw.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="development.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="home.html" style="color: #ff97b7; font-weight: bolder;">myname</a>
+    
+      <div class="mx-auto order-0">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html" style="color: #ff97b7; ">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="art.html" style="color: #ff97b7;">Art</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" style="color: #ff97b7;">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.pdf" style="color: #ff97b7;">Resume</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+
+    <div class="title">
+        Not Your Common Pup
+    </div>
+
+    <!--Responsive Navbar-->
+    <div class="topnav" id="myTopnav">
+      <a href="#Context" class="active">Context</a>
+      <a href="#Pups">Puppies</a>
+      <a href="#Usability">Usability Principles</a>
+      <a href="#Takeaways">Takeaways</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <div class="dog-images">
+      <img src="development_pics/app.png" alt="picture of application">
+    </div>
+
+    <!--Context-->
+    <div class="heading" id="Context">
+      Context
+    </div>
+    <div class="subheading" >
+      How can I know which dog should I get?
+    </div>
+    <div class="paragraph">
+      The truth is... I love dogs. I was able to convince my parents to let me adopt my first puppy, Oreo, when I was 9 years
+      old. Now that I'm in college and Oreo is back home, I've been wanting to get another dog. 
+      <br>
+      <br>
+      Many times, I've done quizzes
+      to find a breed that would better match my needs and the problem is that, depending on the site, the answers vary, making
+      the decision way harder. Thus,
+      I decided to create an app where people can scroll through cards showing different dogs and immediately discover basic 
+      information about them. Additionally, I added some filtering and sorting options to make the search even faster.
+    </div>
+
+    <!--Puppies-->
+    <div class="heading" id="Pups">
+      Meet the puppies
+    </div>
+    <div class="subheading" >
+      Do you want a large, very energetic dog, or a small couch potato? 
+    </div>
+    <div class="paragraph">
+        Finding a dog companion that matches your needs is harder than it seems. Dogs, depending on their breed, have certain 
+        characteristics that, if a person does not know before getting the dog, probably their personalities will mismatch :(.
+        Thus, I wanted to create an application to show dog breeds that are less common, so that users can discover them and learn 
+        some information about them, like their size, exercise needs, and average price in the U.S. market. 
+        <br>
+        <br>
+        If a user wants to do some research before purchasing a dog, this application can help them easily scroll through less
+        common dog breeds and find the relevant information to discover if this breed is the right fit for them. Additionally, 
+        if a user already knows what size, exercise needs, and budget better match with them, the filtering + sorting options
+        will make the search even easier.
+        <br> 
+        <br>
+        These are some of the dogs that you can find in my application:
+    </div>
+    <div class="dog-images">
+      <img src="development_pics/irish.jpeg" alt="bearded collie dog" style="width: 26%; height: auto;">
+      <img src="development_pics/whippet.jpeg" alt="puli dog" style="width: 28%; height: auto;">
+      <img src="development_pics/harrier.jpeg" alt="puli dog" style="width: 26%; height: auto;">
+    </div>
+    <div class="paragraph">
+      From left to right, the breeds are Irish Setter (hair perfect for a Pantene commercial), Whippet (very cool color), and Harrier 
+      (like a larger version of a Beagle).
+    </div>
+    <div class="paragraph">
+      <p>
+        Click 
+      <a href="https://morning-reaches-10341.herokuapp.com/" style="color: #90e0ef; font-weight: bold;"> here </a>
+      to check out the application!
+      </p>
+      
+    </div>
+
+    <!--Usability-->
+    <div class="heading" id="Usability">
+      Usability Principles & Design Choices
+    </div>
+    <div class="paragraph">
+        <ul>
+            <li>I included a Navigation Bar at the top of the page to increase visibility of filtering and sorting options. Additionally,
+                users can access their cart from the navbar, by clicking the "Your Pup Cart" button. This improves usability as it is faster
+                than scrolling. 
+            </li>
+            <br>
+            <li>Users have the option to filter by size and exercise needs, and to sort by price either from highest to lowest or from lowest
+                to highest. Given the information displayed, these were the most intuitive filters.
+            </li>
+            <br>
+            <li>To increase memorability and learnability, every dog is displayed in an identical card with the following information: an image
+                of the dog, the name of the breed, their size (large, medium, or large), the amount of exercise the dog requires (low, medium, high),
+                price, and a button to add the dog to your cart if you like the breed. 
+            </li>
+            <br>
+            <li>The cart cards are very similar, with the difference that it has +/- buttons to increase and reduce the quantity of a dog from a 
+                breed and an option to remove the card from the cart.
+            </li>
+            <br>
+            <li>Lastly, for good readability, my application has a minimalistic design with a lot of white space and a turquoise color for the 
+                navbar, the buttons, and the cart title.
+            </li>
+            </ul> 
+    </div>
+
+    <div class="subheading" id="Takeaways">
+      Takeaways
+    </div>
+    <div class="paragraph">
+      I'm really happy that I could create an application that is useful for dog lovers like me. 
+      Designing the cart was definitely the most challenging part when using React for the first time,
+       but it was super fun to be able to explore my creativity while displaying information about a topic I like and
+       learning useful skills that I will continue to apply in my user interface design journey. I hope you liked it!
+    </div>
+    <div class="paragraph">
+      <p>
+        If you want to take a look at the code, 
+        <a href="https://github.com/mariana-alvaro/cs1300-development" style="color: #90e0ef; font-weight: bold;"> here </a>
+        is the link to my GitHub repo.
+       </p>
+    </div>
+    <div class="body-text-bold">
+      Sources:
+    </div>
+    <div class="source">
+      <ul>
+        <li>animalplanet.com</li>
+        <br>
+        <li>akc.org</li>
+        <br>
+        <li>vetstreet.com</li>
+        <br>
+        <li>doglime.com</li>
+        </ul> 
+    </div>
+    <div class="links">
+      <a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin-square" style="color: #ff97b7; font-size: 28px; margin: 3px;"></a>
+      <a href="mailto:myname@brown.edu" target="_blank" class="fa fa-envelope" style="font-size:27px;color:#ff97b7; margin: 3px;"></i></a>  
+        <a href="https://www.github.com" target="_blank" class="fa fa-github" style="color: #ff97b7; font-size: 28px; margin: 3px;"></i></a>
+    </div>
+    <footer> Made by myname ©</footer>
+
+</body>
+</html>
