@@ -156,7 +156,7 @@ table {
     font-size: 12px;
   }
   img {
-    width: 65%;
+    width: 85%;
     height: auto;
   }
   .bullets {
@@ -196,7 +196,7 @@ table {
           font-size: 20px;
       }
       img {
-        width: 70%;
+        width: 90%;
         height: auto;
       }
       .bullets {
@@ -243,7 +243,7 @@ table {
         text-align: center;
   }
   img {
-    width: 70%;
+    width: 90%;
     height: auto;
   }
 }
