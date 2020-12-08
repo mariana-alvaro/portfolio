@@ -156,8 +156,8 @@ table {
     font-size: 12px;
   }
   img {
-    width: 85%;
-    height: auto;
+    width: auto;
+    height: 60% !important;
   }
   .bullets {
     display: flex;
@@ -196,8 +196,8 @@ table {
           font-size: 20px;
       }
       img {
-        width: 90%;
-        height: auto;
+        width: auto;
+        height: 90% !important;
       }
       .bullets {
         display: flex;
@@ -243,7 +243,7 @@ table {
         text-align: center;
   }
   img {
-    width: 90%;
-    height: auto;
+    width: auto;
+    height: 90% !important;
   }
 }
