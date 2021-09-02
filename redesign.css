@@ -142,11 +142,12 @@ body{
     }
     .bullets {
       display: flex;
-      padding-left: 12px;
-      padding-right: 12px;
+      padding-left: 10px;
+      padding-right: 10px;
       font-size: 12px;
       hyphens: auto;
     }
+
       .topnav a {display: none;}
       .topnav a.icon {
         float: right;

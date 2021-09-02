@@ -18,8 +18,8 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="home.html" style="color: #ff97b7; font-weight: bolder;">myname</a>
-    
+      <a class="navbar-brand" href="home.html" style="color: #ff97b7; font-weight: bolder;">Mariana Alvaro</a>
+
       <div class="mx-auto order-0">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
             <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
               <a class="nav-link" href="about.html" style="color: #ff97b7;">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="resume.pdf" style="color: #ff97b7;">Resume</a>
+              <a class="nav-link" href="MarianaAlvaroResume.pdf" style="color: #ff97b7;">Resume</a>
             </li>
         </ul>
     </div>
@@ -76,12 +76,12 @@
       Context
     </div>
     <div class="subheading" >
-      Can a small change in the design of a website change the way consumers navigate through it? 
+      Can a small change in the design of a website change the way consumers navigate through it?
     </div>
     <div class="paragraph">
       For the UI/UX class at Brown, students were asked to make 2 different versions of a online cacti store.
       The goal is to perform an A/B test and statistical analysis to determine if these changes
-      impact the time to complete the task of ordering $150 worth of cacti or the return rate (the 
+      impact the time to complete the task of ordering $150 worth of cacti or the return rate (the
       number of times the user returns to the homepage).
     </div>
     <div class="subheading" >
@@ -110,7 +110,7 @@
       <br>
       <li>Alternative: the time to complete the task in version A is lower than the time to complete it in version B because the larger font increases visibility of the prices and thus,
         the user can add $150 worth of cacti faster.</li>
-      </ul> 
+      </ul>
     </div>
     <div class="body-text-bold">
       Return Rate
@@ -121,7 +121,7 @@
       <br>
       <li>Alternative: version A's return rate will not equal B's return rate  because version's A font size is larger and therefore has a better visibility
         (which would make version A have a lower return rate).</li>
-      </ul> 
+      </ul>
     </div>
 
     <!--Data-->
@@ -129,19 +129,19 @@
       Data Collection
     </div>
     <div class="paragraph">
-      To perform my A/B Test, I sent the link to my website to a random sample of other UI/UX students. This link opened version A half of the time and 
-      version B, the other half. 
+      To perform my A/B Test, I sent the link to my website to a random sample of other UI/UX students. This link opened version A half of the time and
+      version B, the other half.
       <br>
       <br>
       Additionally, I coded some functions in python to compute a Chi-Squared test and a T-test on the different sets of data collected.
       <br>
       <br>
-      Then, I extracted and filtered the logs of the website and transferred the data into an excel file to calculate the time it took each user to 
+      Then, I extracted and filtered the logs of the website and transferred the data into an excel file to calculate the time it took each user to
       complete the task, and how many times an user returned to the homepage (or not) in the two different versions.
-      These logs recorded the interactions of 25 students. 
+      These logs recorded the interactions of 25 students.
       <br>
       <br>
-      Finally, I ran the Chi-Squared test and the T-test on the data collected. 
+      Finally, I ran the Chi-Squared test and the T-test on the data collected.
     </div>
 
     <!--Analysis-->
@@ -156,16 +156,16 @@
     </div>
     <div class="paragraph">
       <br>
-      When a user clicks on a link, a log with a pageload time, session id, and click time is generated. 
+      When a user clicks on a link, a log with a pageload time, session id, and click time is generated.
       Thus, to calculate the time to complete the task for the different users, I substracted the last clicktime
-      from the first page load time of each different user to get the difference in miliseconds. If the user was 
+      from the first page load time of each different user to get the difference in miliseconds. If the user was
       using version A, I would record these miliseconds in a column for version A and vice versa.
       <br>
       <br>
-      With this data, I performed a two sample t-test for the difference of means. I got a t-score of -1.2606 and a 
-      p-value of 0.1168. However, because my p-value is less than my significance level of 5%, I failed to reject the 
-      null hypothesis. Thus, my results are statistically insignificant (there is a doubt as to whether 
-      the alternative hypothesis will repeat itself in further trials). 
+      With this data, I performed a two sample t-test for the difference of means. I got a t-score of -1.2606 and a
+      p-value of 0.1168. However, because my p-value is less than my significance level of 5%, I failed to reject the
+      null hypothesis. Thus, my results are statistically insignificant (there is a doubt as to whether
+      the alternative hypothesis will repeat itself in further trials).
       <br>
       <br>
       Unfortunately, we cannot conclude wether the time to complete the task version A is less than or equal to the time to
@@ -177,9 +177,9 @@
     </div>
     <div class="paragraph">
       <br>
-      The logs also provide information about whether or not a user returned to the homepage after going to the checkout page. We 
+      The logs also provide information about whether or not a user returned to the homepage after going to the checkout page. We
       prefer a low return rate because if the user does not need to return to the homepage after going to checkout, it means that it
-      was easy and clear for them to complete the task effectively on the first try. 
+      was easy and clear for them to complete the task effectively on the first try.
       <br>
       <br>
       I created the following table to manually count how many users returned to the homepage and how many did not:
@@ -205,9 +205,9 @@
     </table>
     <div class="paragraph">
       <br>
-      On first sight, it looks like version A has a lower return rate than version B (or that they have different return rates and thus, 
+      On first sight, it looks like version A has a lower return rate than version B (or that they have different return rates and thus,
       our alternative hypothesis is true). Nonetheless, I ran a Chi-Squared test and obtained
-      a Chi-Squared value of 1.470 and a p-value of 0.225. Again, because my p-value is less than my significance level of 5%, I failed to reject the 
+      a Chi-Squared value of 1.470 and a p-value of 0.225. Again, because my p-value is less than my significance level of 5%, I failed to reject the
       null hypothesis. Thus, my results are statistically insignificant, and I cannot conclude that version A has a different return rate than version B.
     </div>
 
@@ -223,16 +223,16 @@
     </div>
     <div class="paragraph">
       <ul>
-      <li>I believe the biggest limitation for the results of my study was that my sample size was not large enough to 
-        produce statistically significant results. Additionally, even though the selection of students from my UI/UX 
+      <li>I believe the biggest limitation for the results of my study was that my sample size was not large enough to
+        produce statistically significant results. Additionally, even though the selection of students from my UI/UX
         class was random, all the users had similar demographics.
       </li>
       <br>
-      <li>Because my results are statistically insignificant for both the T-test and the Chi-Squared test, I cannot 
+      <li>Because my results are statistically insignificant for both the T-test and the Chi-Squared test, I cannot
         draw any conclusions about design principles. However, I do believe that increasing visibility and legibility
         of a website can decrease the time to completion and return rate. We'll see next time...
       </li>
-      </ul> 
+      </ul>
     </div>
     <div class="body-text-bold">
       Sources:
@@ -242,13 +242,13 @@
         <li>https://www.calculators.org/math/z-critical-value.php</li>
         <br>
         <li>https://create.piktochart.com/</li>
-        </ul> 
+        </ul>
     </div>
     <div class="links">
-      <a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin-square" style="color: #ff97b7; font-size: 28px; margin: 3px;"></a>
-      <a href="mailto:myname@brown.edu" target="_blank" class="fa fa-envelope" style="font-size:27px;color:#ff97b7; margin: 3px;"></i></a>  
-        <a href="https://www.github.com" target="_blank" class="fa fa-github" style="color: #ff97b7; font-size: 28px; margin: 3px;"></i></a>
+      <a href="https://www.linkedin.com/in/mariana-alvaro" target="_blank" class="fa fa-linkedin-square" style="color: #ff97b7; font-size: 28px; margin: 3px;"></a>
+      <a href="mailto:mariana_alvaro@brown.edu" target="_blank" class="fa fa-envelope" style="font-size:27px;color:#ff97b7; margin: 3px;"></i></a>
+      <a href="https://www.github.com/mariana-alvaro" target="_blank" class="fa fa-github" style="color: #ff97b7; font-size: 28px; margin: 3px;"></i></a>
     </div>
-    <footer> Made by myname ©</footer>
+    <footer> Made by Mariana Alvaro ©</footer>
 </body>
 </html>
